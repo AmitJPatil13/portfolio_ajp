@@ -19,16 +19,22 @@ export const projects = [
     name: 'AI-Powered Faculty Monitoring Dashboard (2024)',
     tech: 'Next.js, React, TypeScript, Tailwind CSS, Drizzle ORM, PostgreSQL, Neon, Radix UI, Tremor, Recharts, RHF, Zod, PDFMake, jsPDF, pnpm',
     desc: 'Full-stack platform for monitoring faculty performance with automated reports and frontend integration.',
+    live: 'https://fpms-smoky.vercel.app/',
+    repo: 'https://github.com/AmitJPatil13',
   },
   {
     name: 'Energy Consumption Forecasting Portal (2024)',
     tech: 'Python, Flask, scikit-learn, TensorFlow, Streamlit, Plotly',
     desc: 'Web app to forecast energy consumption with interactive dashboard and backend APIs.',
+    live: '#',
+    repo: 'https://github.com/AmitJPatil13',
   },
   {
     name: 'Product Recommendation System Using AI (2025)',
     tech: 'React, JavaScript, CSS3, Node.js, Flask, OpenAI API, scikit-learn, TensorFlow, Pandas, NumPy',
     desc: 'AI-based product recommendation system with collaborative & content-based filtering, React frontend, Flask APIs, deployed on Vercel, unit-tested with Jest.',
+    live: 'https://recommendation-system-rho-seven.vercel.app/',
+    repo: 'https://github.com/AmitJPatil13',
   },
 ]
 
