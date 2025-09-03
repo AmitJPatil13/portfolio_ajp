@@ -21,6 +21,8 @@ export const projects = [
     desc: 'Full-stack platform for monitoring faculty performance with automated reports and frontend integration.',
     live: 'https://fpms-smoky.vercel.app/',
     repo: 'https://github.com/AmitJPatil13',
+    tags: ['Next.js', 'Drizzle', 'PostgreSQL'],
+    featured: true,
   },
   {
     name: 'Energy Consumption Forecasting Portal (2024)',
@@ -28,6 +30,8 @@ export const projects = [
     desc: 'Web app to forecast energy consumption with interactive dashboard and backend APIs.',
     live: '#',
     repo: 'https://github.com/AmitJPatil13',
+    tags: ['Flask', 'TensorFlow', 'Plotly'],
+    featured: false,
   },
   {
     name: 'Product Recommendation System Using AI (2025)',
@@ -35,7 +39,18 @@ export const projects = [
     desc: 'AI-based product recommendation system with collaborative & content-based filtering, React frontend, Flask APIs, deployed on Vercel, unit-tested with Jest.',
     live: 'https://recommendation-system-rho-seven.vercel.app/',
     repo: 'https://github.com/AmitJPatil13',
+    tags: ['React', 'Python', 'AI'],
+    featured: true,
   },
 ]
+
+export const services = [
+  { title: 'Full‑Stack Development', desc: 'End‑to‑end web apps with React, Node/Flask, SQL/NoSQL, CI/CD.' },
+  { title: 'AI Integrations', desc: 'ML models, inference APIs, and AI features integrated into products.' },
+  { title: 'Dashboards & Data Viz', desc: 'Insightful dashboards with charts, metrics, and reporting.' },
+  { title: 'APIs & Performance', desc: 'Robust REST APIs, caching, and performance tuning.' },
+]
+
+export const keySkills = ['React', 'Node.js', 'Flask', 'PostgreSQL', 'MongoDB', 'TensorFlow', 'Tailwind CSS']
 
 

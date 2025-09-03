@@ -2,9 +2,12 @@ export function About() {
   return (
     <section id="about" className="container py-16 scroll-mt-24">
       <h2 className="text-2xl font-semibold text-white">About</h2>
-      <p className="mt-4 text-neutral-300 max-w-3xl">
+      <p className="mt-2 text-neutral-400 max-w-3xl">
         B.Tech graduate in Artificial Intelligence and Data Science with hands-on full-stack development experience. Proficient in C, C++, Java, Python, JavaScript, React.js, Node.js, Flask, REST APIs, SQL & NoSQL databases. Experienced with Tailwind CSS, CI/CD pipelines, Git version control, and agile team collaboration. Skilled in developing scalable applications, integrating APIs, building AI-driven solutions, and debugging complex problems.
       </p>
+      <div className="mt-6">
+        <a href="#contact" className="focus-ring btn-primary">Work with me</a>
+      </div>
     </section>
   )
 }
@@ -93,7 +96,7 @@ export function Contact({ onSubmit }) {
           <textarea id="message" name="message" rows="5" required className="focus-ring mt-1 w-full rounded-md border border-neutral-800 bg-neutral-900/60 px-3 py-2 text-sm text-white placeholder-neutral-500" placeholder="How can I help?" />
         </div>
         <div>
-          <button type="submit" className="focus-ring inline-flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500 transition-colors">Send Message</button>
+          <button type="submit" className="focus-ring btn-primary">Send Message</button>
         </div>
       </form>
     </section>

@@ -19,6 +19,22 @@ html {
   @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
 }
 
+/* Accent tokens */
+:root {
+  --accent: 99 102 241; /* indigo-500 */
+  --accent-hover: 129 140 248; /* indigo-400 */
+}
+
+.btn-primary {
+  @apply inline-flex items-center rounded-md px-4 py-2 text-sm font-medium text-white transition-colors;
+  background-color: rgb(var(--accent));
+}
+.btn-primary:hover { background-color: rgb(var(--accent-hover)); }
+
+.chip {
+  @apply rounded-md px-2.5 py-1 text-xs;
+}
+
 /* Focus ring */
 .focus-ring {
   @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-neutral-950;

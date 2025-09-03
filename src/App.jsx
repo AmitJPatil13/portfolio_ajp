@@ -2,6 +2,7 @@ import './index.css'
 import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Services from './components/Services'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import { About, Experience, Education, CertsAchievements, Contact } from './components/Sections'
@@ -81,6 +82,7 @@ function App() {
         <Hero />
 
         <About />
+        <Services />
 
         <Skills />
 
