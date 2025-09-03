@@ -3,7 +3,7 @@ import { projects } from '../data/content'
 export default function Projects() {
   const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featured))
   return (
-    <section id="projects" className="container py-16 scroll-mt-24">
+    <section id="projects" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">Projects</h2>
       <p className="mt-2 text-neutral-400">Selected work showcasing full‑stack and AI projects.</p>
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">

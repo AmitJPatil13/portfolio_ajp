@@ -2,7 +2,7 @@ import { socials } from '../data/content'
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section className="relative reveal-on-scroll">
       <div className="pointer-events-none absolute inset-0 -z-10 opacity-30 [mask-image:radial-gradient(60%_60%_at_50%_30%,black,transparent)]">
         <div className="absolute -top-20 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-gradient-to-tr from-indigo-600/40 to-fuchsia-500/40 blur-3xl" />
       </div>

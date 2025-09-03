@@ -35,6 +35,17 @@ html {
   @apply rounded-md px-2.5 py-1 text-xs;
 }
 
+/* Simple reveal-on-scroll animation (no libs) */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+.reveal-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Focus ring */
 .focus-ring {
   @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-neutral-950;

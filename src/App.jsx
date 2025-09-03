@@ -7,6 +7,22 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import { About, Experience, Education, CertsAchievements, Contact } from './components/Sections'
 
+function useRevealOnScroll() {
+  useEffect(() => {
+    const els = document.querySelectorAll('.reveal-on-scroll')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.15 })
+    els.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+}
+
 const NavLink = ({ href, children, onClick }) => (
   <a href={href} onClick={onClick} className="focus-ring text-sm text-neutral-300 hover:text-white transition-colors">
     {children}
@@ -14,6 +30,7 @@ const NavLink = ({ href, children, onClick }) => (
 )
 
 function App() {
+  useRevealOnScroll()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [theme, setTheme] = useState('dark')

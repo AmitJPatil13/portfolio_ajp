@@ -19,7 +19,7 @@ export default function Skills() {
     </span>
   )
   return (
-    <section id="skills" className="container py-16 scroll-mt-24">
+    <section id="skills" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">Technical Skills</h2>
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {skills.map((group) => (

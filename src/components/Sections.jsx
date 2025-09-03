@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section id="about" className="container py-16 scroll-mt-24">
+    <section id="about" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">About</h2>
       <p className="mt-2 text-neutral-400 max-w-3xl">
         B.Tech graduate in Artificial Intelligence and Data Science with hands-on full-stack development experience. Proficient in C, C++, Java, Python, JavaScript, React.js, Node.js, Flask, REST APIs, SQL & NoSQL databases. Experienced with Tailwind CSS, CI/CD pipelines, Git version control, and agile team collaboration. Skilled in developing scalable applications, integrating APIs, building AI-driven solutions, and debugging complex problems.
@@ -14,7 +14,7 @@ export function About() {
 
 export function Experience() {
   return (
-    <section id="experience" className="container py-16 scroll-mt-24">
+    <section id="experience" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">Experience</h2>
       <div className="mt-6 rounded-lg border border-neutral-800 bg-neutral-900/60 p-5">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -34,7 +34,7 @@ export function Experience() {
 
 export function Education() {
   return (
-    <section id="education" className="container py-16 scroll-mt-24">
+    <section id="education" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">Education</h2>
       <div className="mt-6 space-y-4">
         <div className="rounded-lg border border-neutral-800 bg-neutral-900/60 p-5">
@@ -56,7 +56,7 @@ export function Education() {
 
 export function CertsAchievements() {
   return (
-    <section className="container py-12">
+    <section className="container py-12 reveal-on-scroll">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <h2 className="text-2xl font-semibold text-white">Certifications</h2>
@@ -79,7 +79,7 @@ export function CertsAchievements() {
 
 export function Contact({ onSubmit }) {
   return (
-    <section id="contact" className="container py-16 scroll-mt-24">
+    <section id="contact" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">Contact</h2>
       <p className="mt-2 text-neutral-300">Feel free to reach out using the form below or email me directly.</p>
       <form onSubmit={onSubmit} className="mt-6 grid grid-cols-1 gap-4 max-w-xl">

@@ -2,7 +2,7 @@ import { services } from '../data/content'
 
 export default function Services() {
   return (
-    <section id="services" className="container py-16 scroll-mt-24">
+    <section id="services" className="container py-16 scroll-mt-24 reveal-on-scroll">
       <h2 className="text-2xl font-semibold text-white">Services</h2>
       <p className="mt-2 text-neutral-400">How I can help your team ship faster and smarter.</p>
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
