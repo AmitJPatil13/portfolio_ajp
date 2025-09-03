@@ -22,6 +22,14 @@ npm install
 npm run dev
 ```
 
+### Contact form (Formspree optional)
+- Default behavior: opens your mail client via mailto.
+- To enable Formspree: create a form at `https://formspree.io/`, then set the endpoint in `src/App.jsx`:
+```
+const formspreeEndpoint = 'https://formspree.io/f/your_id'
+```
+If the request fails, it automatically falls back to mailto.
+
 ### Customize
 - Edit `src/App.jsx` content and links
 - Update styles via Tailwind classes in `src/index.css`
